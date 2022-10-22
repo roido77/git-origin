@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_22_085850) do
+ActiveRecord::Schema.define(version: 2022_10_22_130009) do
+
+  create_table "seets", force: :cascade do |t|
+    t.text "shop_name"
+    t.string "image_id"
+    t.text "caption"
+    t.string "rinku"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
