@@ -12,6 +12,7 @@ class SeetsController < ApplicationController
   end
 
   def new
+    
   end
 
   def update
