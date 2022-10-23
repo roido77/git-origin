@@ -1,9 +1,9 @@
 <h1>詳細ページ</h1>
 
-<div><%= seet.shop_name %></div>
+<div><%= @seet.shop_name %></div>
 
-<div><%= attachment_image_tag seet, :image, :fill, 500, 500, format: 'jpeg' %></div>
+<div><%= attachment_image_tag @seet, :image, :fill, 500, 500, format: 'jpeg' %></div>
 
-<div><%= seet.caption %></div>
+<div><%= @seet.caption %></div>
 
-
+<div><%= raw Rinku.auto_link(h(@seet.rinku)) %></div>
