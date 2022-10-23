@@ -1,6 +1,6 @@
 class SeetsController < ApplicationController
   def index
-    @seet = Seet.all
+    @seets = Seet.all
   end
 
   def create

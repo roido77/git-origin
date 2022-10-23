@@ -1,3 +1,3 @@
 class Seet < ApplicationRecord
-  attachment :ima
+  attachment :image
 end
