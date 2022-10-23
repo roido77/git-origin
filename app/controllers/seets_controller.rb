@@ -22,6 +22,9 @@ class SeetsController < ApplicationController
   end
 
   def update
+    seet = Seet.find(params[:id])
+    seet.update(seet_params)
+    redirect_to seet_path(seet.id)
   end
 
   private
