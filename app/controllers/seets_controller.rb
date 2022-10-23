@@ -10,6 +10,7 @@ class SeetsController < ApplicationController
   end
 
   def show
+    @seet = Seet.find(params[:id])
   end
 
   def edit
@@ -21,9 +22,9 @@ class SeetsController < ApplicationController
 
   def update
   end
-  
+
   private
-  
+
   def seet_params
     params.require(:seet).permit(:shop_name, :image, :caption, :rinku )
   end
