@@ -14,6 +14,7 @@ class SeetsController < ApplicationController
   end
 
   def edit
+    @seet = Seet.find(params[id])
   end
 
   def new
