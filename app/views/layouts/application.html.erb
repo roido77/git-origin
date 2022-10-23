@@ -16,7 +16,7 @@
        <ul class="navbar-nav ml-auto">
         <% if user_signed_in? %>
          <li>
-          <%= link_to destroy_user_session_path, method: :delete class: 'text-white' do %>
+          <%= link_to destroy_user_session_path, method: :delete, class: 'text-white' do %>
            <span><i class="fas fa-sign-out-alt"></i>Log out</span>
           <% end %>
          </li>
@@ -40,7 +40,13 @@
   </main>
 
  <footer class="bg-warning">
+  <div class="cotainer mt-5">
+    <div class="row">
+     <div class="mx-auto">
    <p>スイーツ</p>
+   </div>
+     </div>
+    </div>
  </footer>
   </body>
 </html>
