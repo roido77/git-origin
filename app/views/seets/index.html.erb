@@ -1,3 +1,6 @@
+<div class="container">
+ <div class="row">
+  <div class="col-12">
 <h1>ベスト5</h1>
 
  <% @seets.each.with_index(1) do |seet, idx| %>
@@ -5,11 +8,14 @@
   <div><%= idx %></div>
 
   <div><%= seet.shop_name %></div>
-
-  <div><%= attachment_image_tag seet, :image, :fill, 500, 500, format: 'jpeg' %></div>
-
+ <%= link_to seet_path(seet.id) do %>
+  <div><%= attachment_image_tag seet, :image, format: 'jpeg', size: "600x600" %></div>
+ <% end %>
   <div><%= seet.caption %></div>
 
   <div><%= raw Rinku.auto_link(h(seet.rinku)) %></div>
 
-  <% end %>
+    <% end %>
+     </div>
+   </div>
+  </div>
